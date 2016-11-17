@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/riderAuthenticationActivity_second_back"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_riderAuthenticationActivity_second_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_riderAuthenticationActivity_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_riderAuthenticationActivity_title"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txt_riderAuthenticationActivity_second_next"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/riderAuthenticationActivity_second_back"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:textColor="#9a9a9b"
+            android:text="陪骑资料"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="#f3f3f3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="陪骑价格" />
+
+            <TextView
+                android:id="@+id/edt_riderAuthenticationActivity_second_price"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="填写陪骑价格"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="元/h" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="#f2f2f2" >
+
+            <TextView
+                android:id="@+id/txt_riderAuthenticationActivity_second_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="陪骑区域"
+                android:textColor="@color/dark"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_riderAuthenticationActivity_second_address"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/txt_riderAuthenticationActivity_second_address" >
+
+                <TextView
+                    android:id="@+id/txt_riderAuthenticationActivity_second_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderAuthenticationActivity_second_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/txt_riderAuthenticationActivity_second_province"
+                    android:textColor="@color/dark"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_riderAuthenticationActivity_second_arrows3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/little_return" />
+
+                <TextView
+                    android:id="@+id/txt_riderAuthenticationActivity_second_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/txt_riderAuthenticationActivity_second_city"
+                    android:textColor="@color/dark"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_riderAuthenticationActivity_second_time"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="#f3f3f3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="陪骑时间" />
+
+
+            <TextView
+                android:id="@+id/txt_riderAuthenticationActivity_second_time"
+                android:gravity="center_vertical"
+                android:text="点击设置陪骑时间"
+                android:layout_marginLeft="25dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:background="@drawable/little_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="陪骑说明"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grays"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edt_riderAuthenticationActivity_second_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="多说几句,介绍下自己,看看有多少人约你！"
+                    android:maxLength="100"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_releaseActiveActivity_memoLengh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0/100" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

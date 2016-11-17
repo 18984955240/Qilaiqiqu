@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_riderCommentActivity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|right"
+            android:text="陪骑评价"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:id="@+id/btn_riderCommentActivity_comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:gravity="center"
+            android:padding="7dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您约"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_riderCommentActivity_return_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="TA"
+            android:textColor="#6dbfed"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="的陪骑，骑行时间是"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_riderCommentActivity_return_time"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="2016-01-26    13:00-15:00"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="陪骑已经结束了"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/grays"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <FrameLayout
+        android:id="@+id/riderCommentActivity_frameLayout"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/award_bg"
+                />
+
+            <TextView
+                android:id="@+id/txt_riderCommentActivity_return_award"
+                android:text="6"
+                android:textColor="@color/orange"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_riderCommentActivity_return_award"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rider_award"
+            />
+
+    </FrameLayout>
+
+
+        <TextView
+
+            android:layout_marginTop="5dp"
+            android:text="陪骑完了，点击上面打赏一下陪骑士吧!"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:text="点评一下"
+            android:textSize="13sp"
+            android:background="@drawable/corners_chat_text"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#f7f7f7"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_riderCommentActivity_my_return"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="陪骑活动怎么样，评价一下吧"
+            android:maxLength="50"
+            android:textColor="#9d9d9e"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_riderCommentActivity_return_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/txt_commentmessageactivity_return_num" />
+    </LinearLayout>
+
+
+</LinearLayout>

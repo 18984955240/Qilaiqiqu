@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/expert3"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@drawable/qlqq_border_l"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="38dp"
+            android:textSize="17sp"
+            android:textColor="@color/dark"
+            android:text="陪骑士怎么玩?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:background="@drawable/qlqq_border_r"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginBottom="-6.5dp"
+            android:layout_toEndOf="@+id/title"
+            android:layout_alignBottom="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/dark"
+            android:lineSpacingExtra="8dp"
+            android:text="小伙伴会获得一个 &quot;更安全、低成本 、更放心&quot; 的有保障骑行之旅 。"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="128dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="92dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@color/dark"
+                android:layout_width="50dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/qlqq"
+                android:layout_marginLeft="7dp"
+                android:text="骑来骑去"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/bule"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/img_title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_title_photo"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:layout_centerInParent="true"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@color/white"
+                />
+
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:id="@+id/img_title_photo"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/persional_picture"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_title_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/layout_title_photo"
+            android:text="ss"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_title_intro"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_title_name"
+            android:layout_toEndOf="@+id/layout_title_photo"
+            android:text="ss"
+            android:textSize="13sp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:id="@+id/txt_title_care"
+            android:background="#7fffffff"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text="加关注"
+            android:textSize="9sp"
+            android:textColor="@color/white"
+            android:layout_above="@+id/txt_title_intro"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/txt_title_chat"
+            android:background="#7fffffff"
+            android:gravity="center"
+            android:text="加关注"
+            android:textSize="9sp"
+            android:textColor="@color/white"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/txt_title_care"
+            android:layout_toStartOf="@+id/txt_title_care"
+            android:layout_marginEnd="15dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txt_title_about"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:text="关于我"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/txt_title_rider"
+            android:gravity="center"
+            android:text="陪骑"
+            android:textSize="11sp"
+            android:background="#eeeeee"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/txt_title_dptj"
+            android:gravity="center"
+            android:text="点评&#38;推荐"
+            android:textSize="11sp"
+            android:background="#eeeeee"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

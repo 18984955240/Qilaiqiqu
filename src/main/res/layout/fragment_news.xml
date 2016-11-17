@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_NewsFragment_message"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/news_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_NewsFragment_messagePoint"
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_point"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/mainActivity_title"
+                android:text="消息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_NewsFragment_order"
+            android:background="#e6e6e6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/news_oder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_NewsFragment_orderPoint"
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_point"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/mainActivity_title"
+                android:text="订单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_NewsFragment_attend"
+            android:background="#e6e6e6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/news_attend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_NewsFragment_attendPoint"
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_point"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/mainActivity_title"
+                android:text="陪骑"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_NewsFragment_active"
+            android:background="#e6e6e6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/news_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:id="@+id/txt_NewsFragment_activePoint"
+                    android:background="@drawable/red_point"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/mainActivity_title"
+                android:text="活动"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_NewsFragment_button"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_news_button"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_NewsFragment_button1"
+            android:background="@drawable/corners_news_button1"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="聊天" />
+
+        <TextView
+            android:id="@+id/txt_NewsFragment_button2"
+            android:layout_width="0dp"
+            android:textColor="@color/mainActivity_title"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="系统消息" />
+    </LinearLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewPager_ridermanagecenter"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qizhi.qilaiqiqu.utils.NoScrollViewPager
+            android:id="@+id/viewPager_news_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <com.qizhi.qilaiqiqu.utils.NoScrollViewPager
+            android:visibility="gone"
+            android:id="@+id/viewPager_news_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <com.qizhi.qilaiqiqu.utils.NoScrollViewPager
+            android:visibility="gone"
+            android:id="@+id/viewPager_news_attend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <com.qizhi.qilaiqiqu.utils.NoScrollViewPager
+            android:visibility="gone"
+            android:id="@+id/viewPager_news_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

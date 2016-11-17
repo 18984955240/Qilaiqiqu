@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_relaxation"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="休闲骑行"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_game"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="单车赛事"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_near"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_near"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="骑行旅游"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_zipper"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="腐败拉练"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_class"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="专业课堂"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_share"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="大咖分享"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_diy"
+            android:background="@drawable/corners_activity_button"
+            android:layout_marginLeft="24dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_diy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="单车DIY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activityFragment_else"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/corners_activity_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:background="@drawable/activity_else"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView10" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="其他"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_activityFragment_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:background="@drawable/activity_bg"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:background="@drawable/corners_riding_character"
+            android:text="骑行这个圈儿，热闹!"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="138dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_activityFragment_near"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="附近活动" />
+            <TextView
+                android:id="@+id/img_activityFragment_near"
+                android:background="@color/mainActivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_activityFragment_near"
+                android:layout_alignRight="@+id/txt_activityFragment_near"
+                android:layout_alignLeft="@+id/txt_activityFragment_near" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_activityFragment_expert"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="达人活动" />
+            <TextView
+                android:id="@+id/img_activityFragment_expert"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_activityFragment_expert"
+                android:layout_alignRight="@+id/txt_activityFragment_expert"
+                android:layout_alignLeft="@+id/txt_activityFragment_expert" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_activityFragment_hot"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="热门活动" />
+            <TextView
+                android:id="@+id/img_activityFragment_hot"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_activityFragment_hot"
+                android:layout_alignRight="@+id/txt_activityFragment_hot"
+                android:layout_alignLeft="@+id/txt_activityFragment_hot" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:gravity="bottom"
+        android:id="@+id/layout_activityFragment_select"
+        android:background="@color/write"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txt_activityFragment_hotActivity"
+            android:text="热门活动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="35dp"
+            android:id="@+id/txt_activityFragment_newActivity"
+            android:text="最新活动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_activityFragment_hotActivity"
+            android:layout_alignBottom="@+id/txt_activityFragment_hotActivity"
+            android:layout_toEndOf="@+id/img_activityFragment_hotActivity"
+            android:layout_marginStart="26dp" />
+        <ImageView
+            android:id="@+id/img_activityFragment_hotActivity"
+            android:layout_width="63dp"
+            android:layout_height="2dp"
+            android:visibility="visible"
+            android:background="@color/mainActivity_title"
+            android:layout_below="@+id/txt_activityFragment_hotActivity"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignStart="@+id/txt_activityFragment_hotActivity"
+            android:layout_alignEnd="@+id/txt_activityFragment_hotActivity" />
+        <ImageView
+
+            android:id="@+id/img_activityFragment_newActivity"
+            android:layout_width="65dp"
+            android:layout_height="2dp"
+            android:visibility="invisible"
+            android:background="@color/mainActivity_title"
+            android:layout_alignTop="@+id/img_activityFragment_hotActivity"
+            android:layout_alignStart="@+id/txt_activityFragment_newActivity"
+            android:layout_alignEnd="@+id/txt_activityFragment_newActivity" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="4.5dp" />
+
+    <!--<View-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@color/grays"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"/>-->
+
+</LinearLayout>

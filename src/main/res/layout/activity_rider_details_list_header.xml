@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.qizhi.qilaiqiqu.utils.ImageCycleViewUtil
+            android:visibility="gone"
+            android:background="@color/bule"
+            android:id="@+id/icc_riderDetails"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" >
+        </com.qizhi.qilaiqiqu.utils.ImageCycleViewUtil>
+
+        <RelativeLayout
+            android:id="@+id/img_riderDetailsActivity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            >
+            <ImageView
+
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rider_return"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:layout_centerInParent="true"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@color/white"
+                />
+            
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:layout_centerInParent="true"
+                android:id="@+id/rider_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/persional_picture"
+                />
+            
+            
+        </RelativeLayout>
+
+        
+
+        <TextView
+            android:id="@+id/txt_riderDetails_riderName"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的天下"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="3dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/mainActivity_title"
+                />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/mainActivity_title"
+                android:text="关于我" />
+            
+        </LinearLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/txt_riderDetailsActivity_memo"
+            android:text="字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述字多到没法描述"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/rider_lable"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="3dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mainActivity_title"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/mainActivity_title"
+                    android:text="陪骑区域" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_address"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark"
+                android:text="浙江省 杭州市 西湖区" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="陪骑次数"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:id="@+id/txt_riderDetailsActivity_number"
+                    android:gravity="center"
+                    android:background="@drawable/text_circle"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:text="12次"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="陪骑价格"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:id="@+id/txt_riderDetailsActivity_price"
+                    android:gravity="center"
+                    android:background="@drawable/text_circle"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:text="12次"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="陪骑种类"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:id="@+id/txt_riderDetailsActivity_bikeType"
+                    android:gravity="center"
+                    android:background="@drawable/text_circle"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:text="12次"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="陪骑里程"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:id="@+id/txt_riderDetailsActivity_mileage"
+                    android:gravity="center"
+                    android:background="@drawable/text_circle"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:text="12次"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="3dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/mainActivity_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/mainActivity_title"
+                android:text="陪骑宣言" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rider_declarationDemo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字又是很多字"
+            />
+
+        <ImageView
+            android:id="@+id/rider_individualImage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/rider_individualImage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/rider_individualImage3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="3dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/mainActivity_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/mainActivity_title"
+                android:text="陪骑时间" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_monday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周一"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周二"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周三"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_thuresday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周四"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_friday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周五"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_saturday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周六"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_riderDetailsActivity_sunday"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_rider_time_white"
+                android:gravity="center"
+                android:text="周日"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_riderDetailsActivity_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_7"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="7:00"
+                    android:hint="0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_8"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_7"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="8:00"
+                    android:hint="1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_9"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="9:00"
+                    android:hint="2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_10"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_9"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="10:00"
+                    android:hint="3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_11"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="11:00"
+                    android:hint="4"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_12"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_11"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="12:00"
+                    android:hint="5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_13"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_12"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="13:00"
+                    android:hint="6"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_14"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="14:00"
+                    android:hint="7"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_15"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_14"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="15:00"
+                    android:hint="8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_16"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="16:00"
+                    android:hint="9"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_17"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_16"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="17:00"
+                    android:hint="10"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_18"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_17"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="18:00"
+                    android:hint="11"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_19"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_18"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="19:00"
+                    android:hint="12"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_riderDetailsActivity_20"
+                    android:layout_width="40dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/txt_riderDetailsActivity_7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txt_riderDetailsActivity_19"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_rider_time_white"
+                    android:gravity="center"
+                    android:text="20:00"
+                    android:hint="13"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#9c9c9d"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="约骑前请在此处选择约骑时间"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="3dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/mainActivity_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/mainActivity_title"
+                android:text="陪骑须知" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rider_agreement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_price"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="骑行价格"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!---->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_number"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="陪骑次数"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!---->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_bikeType"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="车型种类"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_riderDetailsActivity_bikeType"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_address"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="骑行区域"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_riderDetailsActivity_address"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_mileage"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="骑行里程"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!---->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_phone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="手机号码"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_riderDetailsActivity_phone"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_riderDetailsActivity_memo"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#f2f2f2"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="陪骑描述"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_riderDetailsActivity_memo"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/dark"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+   <LinearLayout
+       android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:layout_width="3dp"
+               android:layout_height="10dp"
+               android:layout_gravity="center_vertical"
+               android:background="@color/mainActivity_title"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="44dp"
+               android:layout_marginLeft="10dp"
+               android:gravity="center_vertical"
+               android:textColor="@color/mainActivity_title"
+               android:text="陪骑评论" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

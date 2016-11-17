@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_centerInParent="true"
+        android:background="#44939A"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/GifImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+
+
+
+</RelativeLayout>

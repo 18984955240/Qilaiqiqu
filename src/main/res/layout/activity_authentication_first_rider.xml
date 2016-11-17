@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+    android:id="@+id/riderAuthenticationActivity_first_back"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#6dbfed" >
+
+    <LinearLayout
+        android:id="@+id/layout_riderAuthenticationActivity_first_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/return_innavigationbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/back"
+            android:textColor="@color/write" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_riderAuthenticationActivity_first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/text_riderAuthenticationActivity_title"
+        android:textColor="@color/write"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_riderAuthenticationActivity_first_next"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/riderAuthenticationActivity_first_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ad"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="#9c9c9c"
+                    android:text="基本资料"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="关于我"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/grays"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/edt_releaseActiveActivity_riderMemo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="top"
+                            android:hint="个性化的你才更有吸引力"
+                            android:textSize="14sp" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/txt_releaseActiveActivity_memoLengh"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="right|center_horizontal"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:text="0/100" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="个性标签"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="江湖身份"
+                            android:textSize="10sp"
+                            />
+                        <com.zhy.view.flowlayout.TagFlowLayout
+                            android:id="@+id/identity"
+                            zhy:max_select="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            >
+                        </com.zhy.view.flowlayout.TagFlowLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="骑行装备"
+                            android:textSize="10sp"
+                            />
+                        <com.zhy.view.flowlayout.TagFlowLayout
+                            zhy:max_select="1"
+                            android:id="@+id/equipment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            >
+                        </com.zhy.view.flowlayout.TagFlowLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="70dp"
+                        android:text="单选"
+                        android:textSize="10sp"
+                        android:textColor="#9c9c9c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个性评价"
+                            android:textSize="10sp"
+                            />
+                        <com.zhy.view.flowlayout.TagFlowLayout
+                            android:id="@+id/evaluate"
+                            zhy:max_select="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            >
+                        </com.zhy.view.flowlayout.TagFlowLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个性特点"
+                            android:textSize="10sp"
+                            />
+                        <com.zhy.view.flowlayout.TagFlowLayout
+                            android:id="@+id/personality"
+                            zhy:max_select="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            >
+                        </com.zhy.view.flowlayout.TagFlowLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="70dp"
+                        android:text="最多两个"
+                        android:textSize="10sp"
+                        android:textColor="#9c9c9c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:text="个性照片"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_riderAuthenticationActivity_first_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_riderAuthenticationActivity_first_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/add_pictures" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="25dp"
+                    android:text="上传高清头像可以增加约骑的几率哦！"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grays"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="手机号码" />
+
+                    <EditText
+                        android:id="@+id/edt_riderAuthenticationActivity_first_phoneNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="手机号仅你同意陪骑的用户可以看到"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp" >
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_riderAuthenticationActivity_first_next"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="39dp"-->
+            <!--android:layout_below="@+id/riderAuthenticationActivity_first_back"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="350dp"-->
+            <!--android:background="@drawable/corners_bg_blue"-->
+            <!--android:gravity="center"-->
+            <!--android:text="下一步"-->
+            <!--android:textColor="@color/white" />-->
+
+            <TextView
+                android:layout_marginBottom="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ad"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="第1步，还有2步" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

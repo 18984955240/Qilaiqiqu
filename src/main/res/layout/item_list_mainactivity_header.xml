@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.qizhi.qilaiqiqu.utils.ImageCycleViewUtil
+            android:id="@+id/icv_topView"
+            android:layout_width="match_parent"
+            android:layout_height="195dp">
+        </com.qizhi.qilaiqiqu.utils.ImageCycleViewUtil>
+
+        <LinearLayout
+            android:background="#1Affffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:layout_marginLeft="15dp"
+                android:id="@+id/img_mainActivity_photo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_default"
+                app:border_color="@color/light"
+                />
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_mainActivity_search"
+                    android:background="@drawable/border_main_search_white"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:text="搜索想要的内容"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/riding_search"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView9" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_mainActivity_location"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/riding_location"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/txt_mainActivity_location"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:text="杭州"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_ridingFragment_rwz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/riding_character"
+                />
+            <TextView
+                android:background="@drawable/corners_riding_more"
+                android:textSize="6dp"
+                android:text="more"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+            <TextView
+                android:background="@drawable/corners_riding_character"
+                android:text="骑行人物志,大神都在此"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="138dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_riding_new"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="最新游记" />
+            <TextView
+                android:id="@+id/img_riding_new"
+                android:background="@color/mainActivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_riding_new"
+                android:layout_alignRight="@+id/txt_riding_new"
+                android:layout_alignLeft="@+id/txt_riding_new" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_riding_propose"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="推荐游记" />
+            <TextView
+                android:id="@+id/img_riding_propose"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_riding_propose"
+                android:layout_alignRight="@+id/txt_riding_propose"
+                android:layout_alignLeft="@+id/txt_riding_propose" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_riding_hot"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="热门游记" />
+            <TextView
+                android:id="@+id/img_riding_hot"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_riding_hot"
+                android:layout_alignRight="@+id/txt_riding_hot"
+                android:layout_alignLeft="@+id/txt_riding_hot" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+         />
+
+</LinearLayout>

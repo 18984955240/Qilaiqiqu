@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@color/grays"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:id="@+id/img_search_back"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/return_blue2"
+            />
+
+        <EditText
+            android:id="@+id/edt_search_input"
+            android:paddingLeft="10dp"
+            android:textColor="#909090"
+            android:textSize="14sp"
+            android:hint="请输入关键字搜索内容"
+            android:background="@drawable/border_editext"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+
+            android:layout_weight="1" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/f8f8"
+            android:id="@+id/txt_search_search"
+            android:background="@drawable/corners_bg_blue"
+            android:text="确定"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_search_QYJ"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark"
+                android:text="骑游记" />
+            <TextView
+                android:id="@+id/img_search_QYJ"
+                android:background="@color/mainActivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txt_search_QYJ"
+                android:layout_alignRight="@+id/txt_search_QYJ"
+                android:layout_alignLeft="@+id/txt_search_QYJ" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_search_HD"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark"
+                android:text="活动" />
+            <TextView
+                android:id="@+id/img_search_HD"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txt_search_HD"
+                android:layout_alignRight="@+id/txt_search_HD"
+                android:layout_alignLeft="@+id/txt_search_HD" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_search_PQS"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark"
+                android:text="陪骑士" />
+            <TextView
+                android:id="@+id/img_search_PQS"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txt_search_PQS"
+                android:layout_alignRight="@+id/txt_search_PQS"
+                android:layout_alignLeft="@+id/txt_search_PQS" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_search_RWZ"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark"
+                android:text="人物志" />
+            <TextView
+                android:id="@+id/img_search_RWZ"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txt_search_RWZ"
+                android:layout_alignRight="@+id/txt_search_RWZ"
+                android:layout_alignLeft="@+id/txt_search_RWZ" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/grays"
+        />
+
+    <ListView
+        android:id="@+id/list_search_list"
+        android:divider="#ffffffff"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    
+</LinearLayout>

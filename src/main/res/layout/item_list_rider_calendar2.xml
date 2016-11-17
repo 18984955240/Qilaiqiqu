@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/month"
+        android:text="八月份"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:background="@color/grays"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day0"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:hint="0"
+                android:tag="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day1"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="1"
+                android:tag="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day2"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="2"
+                android:tag="2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day3"
+                android:gravity="center"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:hint="3"
+                android:tag="3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day4"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="4"
+                android:tag="4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day5"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="5"
+                android:tag="5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day6"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="6"
+                android:tag="6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day7"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:hint="7"
+                android:tag="7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day8"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="8"
+                android:tag="8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day9"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="9"
+                android:tag="9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day10"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="10"
+                android:tag="10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day11"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="11"
+                android:tag="11"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day12"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="12"
+                android:tag="12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day13"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="13"
+                android:tag="13"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day14"
+                android:layout_marginLeft="1dp"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:hint="14"
+                android:tag="14"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day15"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="15"
+                android:tag="15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day16"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="16"
+                android:tag="16"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day17"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="17"
+                android:tag="17"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day18"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="18"
+                android:tag="18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day19"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="19"
+                android:tag="19"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day20"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="20"
+                android:tag="20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day21"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="21"
+                android:tag="21"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day22"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="22"
+                android:tag="22"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day23"
+                android:gravity="center" 
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="23"
+                android:tag="23"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day24"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="24"
+                android:tag="24"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day25"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="25"
+                android:tag="25"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day26"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="26"
+                android:tag="26"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/txt_day27"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="27"
+                android:tag="27"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/is_need2"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day28"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="28"
+                android:tag="28"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day29"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="29"
+                android:tag="29"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day30"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="30"
+                android:tag="30"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day31"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="31"
+                android:tag="31"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day32"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="32"
+                android:tag="32"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day33"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="33"
+                android:tag="33"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day34"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="34"
+                android:tag="34"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/is_need"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_day35"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="35"
+                android:tag="35"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day36"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="36"
+                android:tag="36"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day37"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="37"
+                android:tag="37"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day38"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="38"
+                android:tag="38"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day39"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="39"
+                android:tag="39"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day40"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:hint="40"
+                android:tag="40"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txt_day41"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:hint="41"
+                android:tag="41"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

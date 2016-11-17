@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ffffffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_below="@+id/riderrecommend_1"
+            android:id="@+id/img_riderrecommend_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <LinearLayout
+
+            android:layout_marginBottom="-20dp"
+            android:id="@+id/riderrecommend_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                    android:layout_centerInParent="true"
+                    android:layout_width="60dp"
+                    android:layout_height="58dp"
+                    android:src="@color/white"
+                    />
+                <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                    android:id="@+id/img_riderrecommend_photo"
+                    android:layout_centerInParent="true"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/homepage_picture"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_riderrecommend_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="自然风景好"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+
+             <TextView
+                android:id="@+id/txt_riderrecommend_price"
+                android:layout_marginTop="15dp"
+                android:text="50元/H"
+                android:layout_marginRight="30dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:background="@drawable/corners_chat_text"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#6DBEEC"
+            android:text="陪骑区域" />
+        <TextView
+            android:id="@+id/txt_riderrecommend_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="浙江省" />
+        <TextView
+            android:id="@+id/txt_riderrecommend_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             />
+        <TextView
+            android:id="@+id/txt_riderrecommend_d"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/txt_riderrecommend_price2"
+            android:text="50元/H"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:background="@drawable/corners_chat_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+
+    </LinearLayout>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/rider_tag"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/txt_riderrecommend_describe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="无论如何我都会在骑行的道路上走下去，这是我的理想与信念" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/little_return" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/grays"
+        />
+
+</LinearLayout>
+
+

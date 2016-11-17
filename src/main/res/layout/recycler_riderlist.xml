@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:background="@drawable/corners_rider_list_item"
+        android:id="@+id/masonry_item_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/corners_rider_list_item_image"
+            android:id="@+id/masonry_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_marginTop="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <com.qizhi.qilaiqiqu.utils.CircleImageViewUtil
+                android:id="@+id/masonry_item_userImg"
+                android:layout_marginLeft="5dp"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                />
+
+            <TextView
+                android:layout_gravity="bottom"
+                android:text="sssss"
+                android:singleLine="true"
+                android:id="@+id/masonry_item_title"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#6dbfed"
+                />
+
+            <ImageView
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/attend_comment"
+                />
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/masonry_item_comment"
+                android:layout_marginLeft="5dp"
+                android:textSize="11dp"
+                android:layout_gravity="bottom"
+                android:text="(90)"
+                android:textColor="#b3b3b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/masonry_item_describe"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:maxLength="50"
+            android:layout_height="wrap_content"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:layout_marginBottom="5dp"
+            android:id="@+id/masonry_item_flowlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

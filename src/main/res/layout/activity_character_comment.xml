@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_character_comment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_character_comment_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/text_character_comment_title"-->
+            <!--android:textColor="@color/write"-->
+            <!--android:textSize="18sp" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/layout_character_comment_title"
+        android:textColor="@color/dark"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="穿过风雨的妹子——美瑞"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/layout_character_comment_time"
+            android:text="2016.05.09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/riding_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/layout_character_comment_browse"
+            android:text="260次浏览"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <ImageView
+            android:background="@drawable/riding_comment"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/layout_character_comment_comment"
+            android:text="(90)"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/mainActivity_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/mainActivity_title"
+            android:text="最新评论" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/layout_character_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/white"
+        >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_character_comment_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="说几句吧"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/border_editext"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/layout_character_comment_submit"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/corners_bg_blue"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="评论"/>
+
+    </LinearLayout>
+</LinearLayout>

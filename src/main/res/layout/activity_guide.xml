@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<LinearLayout-->
+        <!--android:background="#1Affffff"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp">-->
+
+        <ImageView
+            android:id="@+id/guideActivity_back"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/return_innavigationbar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp" />
+
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_gray"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <TextView
+                android:id="@+id/guide_flag1"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_gray"
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_gray"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <TextView
+                android:id="@+id/guide_flag2"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_white"
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_gray"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <TextView
+                android:id="@+id/guide_flag3"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_white"
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_gray"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <TextView
+                android:id="@+id/guide_flag4"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_flag_white"
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

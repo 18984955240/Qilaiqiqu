@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_newRelease"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list_newReleaseRiding_ridingItem"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background_shade"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/img_ReleaseRidingActivity_back"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/return_innavigationbar"
+            />
+
+
+        <ImageView
+            android:id="@+id/Img_ReleaseRidingActivity_reChoose"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/reset"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_newReleaseRiding_add"
+            android:background="@drawable/add_photos"
+            android:layout_centerInParent="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_newReleaseRiding_preview"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/layout_newReleaseRiding_release"
+            android:layout_marginRight="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/btn_newReleaseRiding_preview"
+                android:background="@drawable/preview"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预览"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_newReleaseRiding_release"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/layout_newReleaseRiding_keep"
+            android:layout_marginRight="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/btn_newReleaseRiding_release"
+                android:background="@drawable/riding_release"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                 />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_newReleaseRiding_keep"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/btn_newReleaseRiding_keep"
+                android:background="@drawable/preserve"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

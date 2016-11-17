@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_activeReleaseActivity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="发布活动"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activeReleaseActivity_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本资料"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="必填"
+                    android:textSize="11sp"
+                    android:textColor="@color/orange"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动主题"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_activeReleaseActivity_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="必填项"
+                    android:maxLength="15"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eeeeef"
+                />
+            <LinearLayout
+                android:id="@+id/layout_activeReleaseActivity_starTime"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="开始时间"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_activeReleaseActivity_starTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="必填项"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/little_return" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_activeReleaseActivity_time"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="活动时长"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_activeReleaseActivity_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="必填项"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/little_return" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_activeReleaseActivity_endTime"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="报名截止"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_activeReleaseActivity_endTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="必填项"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/little_return" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eeeeef"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="组织者描述"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/edt_activeReleaseActivity_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:gravity="top"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:hint="描述活动注意事项，或者其他联系方式，若涉及收费，请务必说明！必填项"
+                        android:maxLength="150"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="个性标签"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="江湖身份"
+                        android:textSize="10sp"
+                        />
+                    <com.zhy.view.flowlayout.TagFlowLayout
+                        android:id="@+id/identity"
+                        zhy:max_select="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        >
+                    </com.zhy.view.flowlayout.TagFlowLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="骑行装备"
+                        android:textSize="10sp"
+                        />
+                    <com.zhy.view.flowlayout.TagFlowLayout
+                        zhy:max_select="1"
+                        android:id="@+id/equipment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        >
+                    </com.zhy.view.flowlayout.TagFlowLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:text="单选"
+                    android:textSize="10sp"
+                    android:textColor="#9c9c9c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个性评价"
+                        android:textSize="10sp"
+                        />
+                    <com.zhy.view.flowlayout.TagFlowLayout
+                        android:id="@+id/evaluate"
+                        zhy:max_select="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        >
+                    </com.zhy.view.flowlayout.TagFlowLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个性特点"
+                        android:textSize="10sp"
+                        />
+                    <com.zhy.view.flowlayout.TagFlowLayout
+                        android:id="@+id/personality"
+                        zhy:max_select="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        >
+                    </com.zhy.view.flowlayout.TagFlowLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:text="最多两个"
+                    android:textSize="10sp"
+                    android:textColor="#9c9c9c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="个性标签"
+                    android:textSize="15sp" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/active_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="资深骑友资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/tags_unchosen"
+                        android:textColor="#b4b4b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/tag_selector"
+                        android:textColor="@drawable/tag_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="-5dp"
+                        android:paddingTop="-5dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="资深骑友"
+                        android:textSize="9sp"
+                        android:background="@drawable/table"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="个性照片"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_activeReleaseActivity_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="-3dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_activeReleaseActivity_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/add_pictures" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        
+
+
+    </ScrollView>
+</LinearLayout>

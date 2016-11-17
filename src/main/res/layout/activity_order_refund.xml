@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.Rider_NewRefundActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/refund_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="退款处理"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/refund_name"
+            android:text="ssssssssssss"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/rideTime"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/refund_name"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陪骑时间"
+            />
+
+        <TextView
+            android:id="@+id/refund_time"
+            android:layout_marginLeft="25dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_alignTop="@+id/rideTime"
+            android:layout_toEndOf="@+id/rideTime" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/rideOrder"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/rideTime"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="陪骑订单"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/refund_order"
+            android:layout_marginLeft="25dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陪骑订单"
+            android:layout_marginStart="50dp"
+            android:layout_alignTop="@+id/ridePrice"
+            android:layout_toEndOf="@+id/ridePrice" />
+
+        <TextView
+            android:id="@+id/ridePrice"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/rideTime"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陪骑价格"
+            />
+
+        <TextView
+            android:id="@+id/refund_price"
+            android:layout_marginLeft="25dp"
+            android:textSize="16sp"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陪骑价格"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/refund_order"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grays"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ridePhone"
+            android:textColor="@color/mainActivity_title"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            />
+
+        <TextView
+            android:id="@+id/refund_phone"
+            android:layout_marginLeft="25dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111111111"
+            android:layout_marginStart="50dp"
+            android:layout_alignTop="@+id/ridePhone"
+            android:layout_toEndOf="@+id/ridePhone" />
+
+        <TextView
+            android:id="@+id/rideReason"
+            android:layout_below="@+id/ridePhone"
+            android:textColor="@color/mainActivity_title"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款理由"
+            />
+
+        <TextView
+            android:id="@+id/refund_reason"
+            android:layout_below="@+id/rideReason"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款理由"
+            />
+
+        <TextView
+            android:id="@+id/riderExplain"
+            android:layout_below="@+id/refund_reason"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="处理说明:"
+            />
+
+        <TextView
+            android:id="@+id/refund_explain"
+            android:text="sss"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/riderExplain"
+            android:layout_marginTop="15dp"
+            android:textColor="#9a9a9b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/disposal_normal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/refund_agree"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="同意"
+                android:background="@drawable/corners_rider_text_blue"
+                android:layout_width="87dp"
+                android:layout_height="39dp" />
+
+            <TextView
+                android:id="@+id/refund_decline"
+                android:gravity="center"
+                android:layout_marginLeft="34dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="拒绝"
+                android:background="@drawable/corners_rider_text_blue"
+                android:layout_width="87dp"
+                android:layout_height="39dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/refund_checkOrder"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="已拒绝"
+            android:background="@drawable/corners_rider_text_blue"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="258dp"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

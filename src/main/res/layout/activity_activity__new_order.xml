@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#6dbfed" >
+
+                <LinearLayout
+                    android:id="@+id/layout_newActiveOrder_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/return_innavigationbar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="返回"
+                        android:textColor="@color/write" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_newActiveOrder_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="订单"
+                    android:textColor="@color/write"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="bottom"
+                android:text="订单详情"
+                android:textSize="11sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <View
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/mainActivity_title"
+                android:layout_width="50dp"
+                android:layout_height="2dp"/>
+            <View
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txt_newActiveOrder_activeTitle"
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="杭州千岛湖拉练往返三天环湖欢呼交互"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:maxWidth="310dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:text="(活动名称)"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txt_newActiveOrder_priceExplain"
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="休闲贵宾票(费用名称):79元"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:maxLength="22"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_newActiveOrder_price"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:text="79元*1"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="订单总额"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:maxLength="22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_newActiveOrder_total"
+                    android:textColor="@color/orange"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:text="79元"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_newActiveOrder_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="支付方式"
+                    android:textSize="11sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/mainActivity_title"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"/>
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#eeeeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_zhifubao"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/img_zhifubao"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/pay_unchosen"
+                            android:layout_width="31dp"
+                            android:layout_height="31dp" />
+
+                        <ImageView
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/alipay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:text="支付宝支付"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_weixin"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/layout_zhifubao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/img_weixin"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/pay_unchosen"
+                            android:layout_width="31dp"
+                            android:layout_height="31dp" />
+
+                        <ImageView
+                            android:src="@drawable/wechat_pay"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:text="微信支付"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_below="@+id/weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/order_agreement"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/choesn_pay"
+                            android:layout_width="31dp"
+                            android:layout_height="31dp" />
+
+                        <TextView
+                            android:layout_marginLeft="25dp"
+                            android:text="同意"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/order_agreementBtn"
+                            android:text="《骑来骑去平台支付规则及协议》"
+                            android:textColor="@color/mainActivity_title"
+                            android:textSize="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/order_explain"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray"
+                    android:text="陪骑费用支付须在陪骑结束后24小时内完成。。\n陪骑费用支付后到陪骑结束48小时内，用户可以申请退款\n对于支付环节有任何疑问请拨打骑来骑去服务电话:\n对于支付环节有任何疑问请拨打骑来骑去服务电话:\n对于支付环节有任何疑问请拨打骑来骑去服务电话:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textColor="@color/white"
+                    android:id="@+id/btn_newActiveOrder_order"
+                    android:background="@drawable/corners_rider_text_blue"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="258dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_newActiveOrder_cancel"
+                    android:text="取消订单"
+                    android:textColor="@color/mainActivity_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_newActiveOrder_order"
+                    android:layout_alignEnd="@+id/btn_newActiveOrder_order" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

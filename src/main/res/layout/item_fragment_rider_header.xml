@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_rideractivity_peiqi"
+        android:layout_width="match_parent"
+        android:background="@drawable/attender_bg"
+        android:layout_height="100dp" >
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="2dp"
+                    android:background="@color/white"
+                    />
+                <TextView
+                    android:text="本周陪骑推荐"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="2dp"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/write"-->
+                <!--android:textSize="22sp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="陪骑    狂欢" />-->
+
+            <LinearLayout
+                android:id="@+id/layout_riderImage"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/corners_riding_more"
+            android:textSize="6dp"
+            android:text="more"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_rideractivity_activity_becomerider"
+        android:layout_width="match_parent"
+        android:background="@drawable/apply_bg"
+        android:layout_height="100dp" >
+        <!--<TextView-->
+            <!--android:focusable="false"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/solide_text"-->
+            <!--android:layout_width="225dp"-->
+            <!--android:layout_height="55dp">-->
+        <!--</TextView>-->
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:focusable="false"
+            android:layout_centerInParent="true"
+            android:background="@drawable/corners_riding_character"
+            android:layout_width="215dp"
+            android:layout_height="35dp">
+            <ImageView
+                android:focusable="false"
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/apply_right" />
+
+            <TextView
+                android:focusable="false"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/write"
+                android:textSize="20sp"
+                android:text="我要认证陪骑士" />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@drawable/corners_riding_more"
+            android:textSize="6dp"
+            android:text="more"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_riderFrament_sameCity"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="同城骑士" />
+            <TextView
+                android:id="@+id/img_riderFrament_sameCity"
+                android:background="@color/mainActivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txt_riderFrament_sameCity"
+                android:layout_alignRight="@+id/txt_riderFrament_sameCity"
+                android:layout_alignLeft="@+id/txt_riderFrament_sameCity" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/grays"
+        />
+
+</LinearLayout>

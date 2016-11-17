@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_riderAuthenticationActivity_title"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:paddingTop="18dp"
+                android:textSize="12sp"
+                android:text="联系方式"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="真实姓名"
+                    android:paddingLeft="15dp"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp" />
+
+                <RelativeLayout
+                    android:background="#f3f3f3"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <EditText
+                        android:id="@+id/edt_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="手机号码"
+                    android:paddingLeft="15dp"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp" />
+
+                <RelativeLayout
+                    android:background="#f3f3f3"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:maxLength="11"
+                        android:inputType="phone"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="微信"
+                    android:paddingLeft="15dp"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp" />
+
+                <RelativeLayout
+                    android:background="#f3f3f3"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <EditText
+                        android:id="@+id/edt_weChat"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#9a9a9b"
+                android:textSize="12sp"
+                android:text="上述资料作为联系资料，请如实填写，骑来骑去工作人员将会在认证后联系您。\n本平台保证不会泄露用户的各项隐私资料。"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="85dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_margin="15dp"
+                android:textSize="12sp"
+                android:text="转账账号"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="支付宝"
+                    android:paddingLeft="15dp"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp" />
+
+                <RelativeLayout
+                    android:background="#f3f3f3"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <EditText
+                        android:id="@+id/edt_zhifubao"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#9a9a9b"
+                android:textSize="12sp"
+                android:text="转账账号作为陪骑费用的转账账号。\n每次陪骑费用结算的时候由骑来骑去工作人员转账到指定账户。"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="85dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:background="@drawable/corners_rider_text_blue"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="提交认证资料"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="265dp"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

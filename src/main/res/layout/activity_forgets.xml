@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/layout_forgetActivity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_forgetactivity_title"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_forgetActivity_commit"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="确认"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="账号："
+        android:textSize="17sp"
+        android:textColor="@color/dark"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_forgetActivity_phone"
+        android:textColorHint="#adadad"
+        android:hint="你 的 手 机 号 码"
+        android:background="@null"
+        android:layout_width="332dp"
+        android:textSize="15.5sp"
+        android:inputType="phone"
+        android:layout_marginLeft="23dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="#adadad"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="1dp"
+        android:layout_width="332dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_forgetActivity_code"
+            android:textColorHint="#adadad"
+            android:layout_marginTop="56dp"
+            android:hint="填 写 验 证 码"
+            android:background="@null"
+            android:layout_width="332dp"
+            android:textSize="15.5sp"
+            android:layout_marginLeft="23dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_below="@+id/edt_forgetActivity_code"
+            android:background="#adadad"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="1dp"
+            android:layout_width="170dp"
+             />
+
+        <Button
+            android:id="@+id/btn_forgetActivity_send"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="获 取 验 证 码"
+            android:background="@color/mainActivity_title"
+            android:layout_width="146dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_toEndOf="@+id/textView10" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_forgetActivity_newPass"
+        android:textColorHint="#adadad"
+        android:hint="新 的 密 码"
+        android:background="@null"
+        android:layout_width="332dp"
+        android:textSize="15.5sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="23dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="#adadad"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="1dp"
+        android:layout_width="332dp" />
+
+    <EditText
+        android:id="@+id/edt_forgetActivity_confirm"
+        android:textColorHint="#adadad"
+        android:hint="确认密码"
+        android:background="@null"
+        android:layout_width="332dp"
+        android:textSize="15.5sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="23dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="#adadad"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="1dp"
+        android:layout_width="332dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.Rider_NewApplyActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#6dbfed" >
+
+        <LinearLayout
+            android:id="@+id/applyRider_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/return_innavigationbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@color/write" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="约骑申请"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+        <!--<TextView-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="提交"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/applyRider_userName"
+            android:text="您约XXX称骑行，时间为"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/applyRider_date"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--<TextView-->
+            <!--android:textSize="16dp"-->
+            <!--android:text="2016-01-26    13:00-15:00"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+                <!--android:id="@+id/applyRider_applyDate"-->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="骑行时长"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout_time"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_time"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:paddingLeft="25dp"
+                android:textSize="14sp"
+                android:maxLength="11"
+                android:inputType="number"
+                android:hint="骑行时间将决定订单价格"
+                android:layout_height="44dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="订单价格"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_prices"
+                android:text="0*24元/h"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_totalPrices"
+                android:textColor="@color/orange"
+                android:text="0元"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="联系方式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/grays"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:paddingLeft="25dp"
+                android:textColorHint="#9a9a9a"
+                android:textSize="14sp"
+                android:maxLength="11"
+                android:inputType="number"
+                android:hint="填写你的手机号便于你们联系"
+                android:layout_height="44dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="25dp"
+            android:text="平台不会泄露您的手机号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="捎几句话"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_text"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:textColorHint="#9a9a9a"
+                android:textSize="14sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="可以咨询注意事项，或者提供其他联系方式"
+                android:layout_height="120dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="约骑说明"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_explain"
+            android:layout_marginBottom="20dp"
+            android:textColor="#9a9a9a"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="陪骑用户同意后，将产生陪骑订单，用户可前往个人中心查看并支付。\n陪骑订单在陪骑结束后24小时之前必须支付。\n陪骑完成后拒不支付，骑来骑去拥有追究责任权利。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/applyRider_totalPrice"
+            android:background="#f3f3f3"
+            android:text="订单总额:20元"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/orange"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/applyRider_commit"
+            android:text="约骑"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
