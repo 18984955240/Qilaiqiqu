@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -173,9 +172,12 @@ public class RiderAuthenticationSecondActivity extends BaseActivity
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) { //resultCode为回传的标记，我在B中回传的是RESULT_OK
             case 0:
+
                 //data为B中回传的Intent
-                attendDate = data.getExtras().getString("date");//str即为回传的值
-                timeTxt.setText(attendDate);
+				if(null != data){
+					attendDate = data.getExtras().getString("date");//str即为回传的值
+					timeTxt.setText(attendDate+"");
+				}
                 break;
             default:
                 break;
